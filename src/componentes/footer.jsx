@@ -6,7 +6,7 @@ function Footer(){
         <div className='footer'>
             <div class="card">
                 <div class="card-header">
-                    Featuredd
+                    Featureddd
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Special title treatment</h5>
