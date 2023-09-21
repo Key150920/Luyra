@@ -13,10 +13,10 @@ function Perfil() {
                                 <div class="row g-0">
                                     <div class="col-md-4 gradient-custom text-center text-white"
                                         style={{borderTopRightRadius: ".5rem", borderBottomLeftRadius:  ".5rem"}}>
-                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                                            alt="Avatar" class="img-fluid my-5" style={{width: "80px"}}/>
+                                        <img src="https://www.creartuavatar.com/svgavatars/temp-avatars/svgA43734100283532085.png"
+                                            alt="Avatar" class="img-fluid my-5" style={{width: "100px"}}/>
                                         <h5>Angie Zuñiga</h5>
-                                        <p>Web Designer</p>
+                                        <p>Aprendiz</p>
                                         <i class="far fa-edit mb-5"></i>
                                     </div>
                                     <div class="col-md-8">

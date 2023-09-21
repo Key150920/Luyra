@@ -19,10 +19,11 @@
     background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
     }
 .fondo{
-    background-image: url('https://www.bing.com/th?id=OIP.enMJ_wC7SKXI8pDAtd91kgHaNJ&w=150&h=267&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2');
+    background-image: url('https://th.bing.com/th/id/OIP._AgulSq0Y3XNsc0xZxuxNwAAAA?pid=ImgDet&rs=1');
 
-
-bottom: #aa77c3;
+}
+.registro{
+    background-image: url('https://i.pinimg.com/originals/90/9a/21/909a21673a8fe05a5408321a00a296f6.jpg');
 }
 
 
@@ -41,3 +42,6 @@ bottom: #aa77c3;
     }
 
 
+.gradient-custom {
+    background-image: url('https://i.pinimg.com/originals/90/9a/21/909a21673a8fe05a5408321a00a296f6.jpg')
+}

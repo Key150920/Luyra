@@ -50,10 +50,10 @@ function Registro(){
 
                 <div class="d-flex justify-content-center">
                   <button type="button"
-                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Registro</button>
+                    class="btn registro btn-block btn-lg  text-body">Registro</button>
                 </div>
 
-                <p class="text-center text-muted mt-5 mb-0">¿Al registrarte aceptas nuestras políticas de privacidad? <a href="#!"
+                <p class="text-center text-muted mt-5 mb-0">Al registrarte aceptas nuestras políticas de privacidad <a href="#!"
                     class="fw-bold text-body"><u>Politicas de privacidad</u></a></p>
 
               </form>
