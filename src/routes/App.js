@@ -5,6 +5,8 @@ import Login from '../pages/Login';
 import Registro from '../pages/Registro';
 import Perfil from '../pages/perfil';
 
+
+
 function App() {
   return (
     <Router>
