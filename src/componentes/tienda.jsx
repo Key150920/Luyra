@@ -3,6 +3,10 @@ import "../estilos/login.css";
 import luyra from "../images/shirt_luyra.png";
 import luy from "../images/fashion_luyra.png";
 import cute from "../images/cute_luyra.png";
+import hatluyra from "../images/cowboy_luyra.png";
+import crown from "../images/crown_luyra.png";
+import unicornio from "../images/diademas_luyra.png";
+import {MdOutlineArrowForwardIos} from 'react-icons/md';
 
 function Tiendas() {
   return (
@@ -50,7 +54,7 @@ function Tiendas() {
                                      Precio: 200 Luyras
                                   </p>
                                   <a href="#" class="btn btn-primary">
-                                    Go somewhere
+                                    Comprar
                                   </a>
                                 </div>
                               </div>
@@ -64,14 +68,12 @@ function Tiendas() {
                                   alt="luyra"
                                 />
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
+                                  <h5 class="card-title">Camisa tierna estrella</h5>
                                   <p class="card-text">
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    Precio: 200 Luyras
                                   </p>
                                   <a href="#" class="btn btn-primary">
-                                    Go somewhere
+                                    Comprar
                                   </a>
                                 </div>
                               </div>
@@ -85,14 +87,12 @@ function Tiendas() {
                                   alt="luyra"
                                 />
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
+                                  <h5 class="card-title">Camisa sonriente morada</h5>
                                   <p class="card-text">
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    Precio: 200 Luyras
                                   </p>
                                   <a href="#" class="btn btn-primary">
-                                    Go somewhere
+                                    Comprar
                                   </a>
                                 </div>
                               </div>
@@ -119,7 +119,7 @@ function Tiendas() {
                             <span
                               class="carousel-control-next-icon"
                               aria-hidden="true"
-                            ></span>
+                            ><MdOutlineArrowForwardIos/></span>
                             <span class="visually-hidden">Next</span>
                           </button>
                         </div>
@@ -133,100 +133,108 @@ function Tiendas() {
                     </div>
 
                     <hr class="my-4" />
-
-                    <div class="row">
-                      <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                        <div
-                          class="bg-image hover-overlay hover-zoom ripple rounded"
-                          data-mdb-ripple-color="light"
+                    {/* este el la card con el buso rojo */}
+                    <div
+                          id="carouselExampleInterval2"
+                          class="carousel slide"
+                          data-bs-ride="carousel"
                         >
-                          <img
-                            src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13a.webp"
-                            alt="Buso rojo"
-                            class="w-100"
-                          />
-                          <a href="#!">
+                          <div class="carousel-inner">
                             <div
-                              class="mask"
-                              style={{
-                                backgroundColor: "rgba(251, 251, 251, 0.2)",
-                              }}
-                            ></div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                        <p>
-                          <strong>Red hoodie</strong>
-                        </p>
-                        <p>Color: red</p>
-                        <p>Size: M</p>
-
-                        <button
-                          type="button"
-                          class="btn btn-primary btn-sm me-1 mb-2"
-                          data-mdb-toggle="tooltip"
-                          title="Remove item"
-                        >
-                          <i class="fas fa-trash"></i>
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-danger btn-sm mb-2"
-                          data-mdb-toggle="tooltip"
-                          title="Move to the wish list"
-                        >
-                          <i class="fas fa-heart"></i>
-                        </button>
-                      </div>
-
-                      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                        <div class="d-flex mb-4" style={{ maxWidth: "300px" }}>
-                          <button
-                            class="btn btn-primary px-3 me-2"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                          >
-                            <i class="fas fa-minus"></i>
-                          </button>
-
-                          <div class="form-outline">
-                            <input
-                              id="form1"
-                              min="0"
-                              name="quantity"
-                              value="1"
-                              type="number"
-                              class="form-control"
-                            />
-                            <label class="form-label" for="form1">
-                              Quantity
-                            </label>
+                              class="carousel-item active"
+                              data-bs-interval="10000"
+                            >
+                                {/* Primera imagen */}
+                              <div class="card">
+                                <img
+                                  src={hatluyra}
+                                  class="card-img-top"
+                                  alt="luyra"
+                                />
+                                <div class="card-body">
+                                  <h5 class="card-title">Sombrero cowboy</h5>
+                                  <p class="card-text">
+                                     Precio: 300 Luyras
+                                  </p>
+                                  <a href="#" class="btn btn-primary">
+                                    Comprar
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                {/* segunda imagen */}
+                              <div class="card">
+                                <img
+                                  src={crown}
+                                  class="card-img-top"
+                                  alt="luyra"
+                                />
+                                <div class="card-body">
+                                  <h5 class="card-title">Corona tierna</h5>
+                                  <p class="card-text">
+                                    Precio: 350 Luyras
+                                  </p>
+                                  <a href="#" class="btn btn-primary">
+                                    Comprar
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                                {/* tercera imagen */}
+                              <div class="card">
+                                <img
+                                  src={unicornio}
+                                  class="card-img-top"
+                                  alt="luyra"
+                                />
+                                <div class="card-body">
+                                  <h5 class="card-title">Diadema tierna de unicornio</h5>
+                                  <p class="card-text">
+                                    Precio: 300 Lyras
+                                  </p>
+                                  <a href="#" class="btn btn-primary">
+                                    Comprar
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-
                           <button
-                            class="btn btn-primary px-3 ms-2"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleInterval2"
+                            data-bs-slide="prev"
                           >
-                            <i class="fas fa-plus"></i>
+                            <span
+                              class="carousel-control-prev-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleInterval2"
+                            data-bs-slide="next"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ><MdOutlineArrowForwardIos/></span>
+                            <span class="visually-hidden">Next</span>
                           </button>
                         </div>
-
-                        <p class="text-start text-md-center">
-                          <strong>$17.99</strong>
-                        </p>
-                      </div>
+                        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                      <p>
+                        <strong>Accesorios Luyra</strong>
+                      </p>
                     </div>
+                    {/* hasta aqui */}
                   </div>
                 </div>
-                <div class="card mb-4">
-                  <div class="card-body">
-                    <p>
-                      <strong>Expected shipping delivery</strong>
-                    </p>
-                    <p class="mb-0">12.10.2020 - 14.10.2020</p>
-                  </div>
-                </div>
+                
                 <div class="card mb-4 mb-lg-0">
                   <div class="card-body">
                     <p>
