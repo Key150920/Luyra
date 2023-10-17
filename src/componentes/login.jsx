@@ -1,9 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
+ /*aquí va el import del menu*/
 import "../estilos/login.css";
 
+
+
 function login() {
+  const [miLogin, setMiLogin] = useState("false");
+  const [usu, setUsu] = useState("");
+  const [pas, setPas] = useState("");
+  function IniciarSesion(e){
+    e.preventDefault();
+    var txtusu = document.getElementById("txtusu").value;
+    var txtpas = document.getElementById("txtpas").value;
+    if(txtusu.length===0 || txtpas.length===0){
+      alert("¡Complete los datos faltantes!");
+
+
+    }else{
+      if(usu == "admin" && pas=="123"){
+        setMiLogin("true");
+        document.getElementById("form_login").style.display = "none";
+        /*Aquí hay que colocar el menu*/
+
+
+
+      }else{
+        setMiLogin("true");
+        alert("¡Error de Usuario y/o Contraseña!");
+        document.getElementById("txtusu").value = "";
+        document.getElementById("txtpas").value = "";
+        document.getElementById("txtusu").focus();
+      }
+
+    }
+
+  }
+
+
+
+
   return (
-    <div className="login">
+    <div className="login" id="form_login">
       <section class="text-center">
         <div class="p-5 bg-image fondo" style={{ height: "300px" }}></div>
 
@@ -19,14 +56,15 @@ function login() {
             <div class="row d-flex justify-content-center">
               <div class="col-lg-8">
                 <h2 class="fw-bold mb-5">Iniciar sesión</h2>
-                <form>
+                <form > 
                   
 
                   <div class="form-outline mb-4">
                     <input
                       type="email"
-                      id="form3Example3"
+                      id="txtusu"
                       class="form-control"
+                      onChange={ (e)=>setUsu(e.target.value) }
                     />
                     <label class="form-label" for="form3Example3">
                       Correo electrónico
@@ -36,8 +74,9 @@ function login() {
                   <div class="form-outline mb-4">
                     <input
                       type="password"
-                      id="form3Example4"
+                      id="txtpas"
                       class="form-control"
+                      onChange={ (e)=>setPas(e.target.value) }
                     />
                     <label class="form-label" for="form3Example4">
                       Contraseña
@@ -45,7 +84,7 @@ function login() {
                   </div>
 
                   
-                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                  <button type="submit" class="btn btn-primary btn-block mb-4" onClick={ IniciarSesion}>
                     ¡Iniciar sesión ahora!
                   </button>
 
