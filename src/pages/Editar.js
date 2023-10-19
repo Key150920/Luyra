@@ -1,10 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import Footer from '../componentes/footer';
 import '../estilos/main.css';
 import { MdOutlineArrowBackIosNew } from 'react-icons/md';
+import { NavLink } from 'react-router-dom';
 
-function Perfil() {
+function Editar() {
     return (
         <div className='Perfil'>
             <section class="vh-100" style={{ backgroundColor: "#f4f5f7" }}>
@@ -12,7 +12,7 @@ function Perfil() {
                     <div class="row d-flex justify-content-center align-items-center h-100">
                         <div class="col col-lg-6 mb-4 mb-lg-0">
                             <div className='pb-3'>
-                                <NavLink to='/'>
+                                <NavLink to='/perfil'>
                                     <MdOutlineArrowBackIosNew />
                                 </NavLink>
 
@@ -37,12 +37,12 @@ function Perfil() {
                                             <div class="row pt-1">
                                                 <div class="col-6 mb-3">
                                                     <h6>Email</h6>
-                                                    <p class="text-muted">angiezu@gmail.com</p>
+                                                    {/* <input placeholder='email'></input> */}
                                                 </div>
                                                 <div class="col-6 mb-3">
                                                     <h6>Celular</h6>
                                                     {/* <input placeholder='celular'></input> */}
-                                                    <p class="text-muted">64283663</p>
+                                                    <input></input>
                                                 </div>
                                             </div>
                                             <h6>Más información</h6>
@@ -54,13 +54,28 @@ function Perfil() {
                                                 </div>
                                                 <div class="col-6 mb-3">
                                                     <h6>Sexo</h6>
-                                                    <p class="text-muted">Mujer</p>
+
+                                                    <select class="form-select" aria-label="Default select example">
+                                                      <option selected>Seleccionar</option>
+                                                      <option value="1">Mujer</option>
+                                                      <option value="2">Hombre</option>
+                                                      <option value="3">No binario</option>
+                                                        
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-center">
-                                                <button type="button"
-                                                    class="btn editar btn-block btn-lg  text-body"><NavLink to='/editar'>Editar</NavLink></button>
+                                            <div class="d-flex justify-content-center text-center">
+                                                <div className='col-6'>
+                                                    <button type="button"
+                                                    class="btn editar btn-block btn-lg  text-body">Guardar</button>
+                                                </div>
+                                                
+                                                <div className='col-6'>
+                                                    <button type="button"
+                                                    class="btn editar btn-block btn-lg  text-body">Cancelar</button>
+                                                </div>
                                             </div>
+
                                             <div class="d-flex justify-content-start">
                                                 <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
                                                 <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
@@ -82,4 +97,4 @@ function Perfil() {
     );
 }
 
-export default Perfil;
+export default Editar;
