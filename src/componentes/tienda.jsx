@@ -7,6 +7,8 @@ import hatluyra from "../images/cowboy_luyra.png";
 import crown from "../images/crown_luyra.png";
 import unicornio from "../images/diademas_luyra.png";
 import {MdOutlineArrowForwardIos} from 'react-icons/md';
+import store from '../images/store.png';
+
 
 function Tiendas() {
   return (
@@ -16,8 +18,8 @@ function Tiendas() {
           <div class="row d-flex justify-content-center my-4">
             <div class="col-md-8">
               <div class="card mb-4">
-                <div class="card-header py-3">
-                  <h5 class="mb-0">Tienda Luyra</h5>
+                <div class="card-header py-3" >
+                  <img src={store} alt="/" style={{width:"40px",height:"40px"}}/><h5>Tienda Luyra</h5>
                 </div>
                 <div class="card-body">
                   <div class="row">
