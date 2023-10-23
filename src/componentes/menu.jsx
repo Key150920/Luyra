@@ -1,47 +1,79 @@
 import React from 'react';
 
 
-
 function Menu(){
     return(
-        <div className='menu'>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+        <div className='Menu'>
+                  <nav id="navbar">
+                    <ul class="navbar-items flexbox-col">
+                      <li class="navbar-logo flexbox-left">
+                        <a class="navbar-item-inner flexbox">
+                          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 1438.88 1819.54">
+                            <polygon points="925.79 318.48 830.56 0 183.51 1384.12 510.41 1178.46 925.79 318.48"/>
+                            <polygon points="1438.88 1663.28 1126.35 948.08 111.98 1586.26 0 1819.54 1020.91 1250.57 1123.78 1471.02 783.64 1663.28 1438.88 1663.28"/>
+                          </svg>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"/></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="search-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Search</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="home-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Home</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="folder-open-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Projects</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="pie-chart-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Dashboard</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="people-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Team</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Support</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="settings-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Settings</span>
+                        </a>
+                      </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                    </div>
-                </div>
-                </nav>
+                  </nav>
         </div>
+
     );
 
 }
