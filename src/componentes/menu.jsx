@@ -4,50 +4,75 @@ import React from 'react';
 function Menu(){
     return(
         <div className='Menu'>
-          <div id="mainNavigation">
-      <nav role="navigation">
-        <div class="py-3 text-center border-bottom">
-          <img src="../images.logo.png" alt="Luyra logo" class="invert"/>
+                  <nav id="navbar">
+                    <ul class="navbar-items flexbox-col">
+                      <li class="navbar-logo flexbox-left">
+                        <a class="navbar-item-inner flexbox">
+                          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 1438.88 1819.54">
+                            <polygon points="925.79 318.48 830.56 0 183.51 1384.12 510.41 1178.46 925.79 318.48"/>
+                            <polygon points="1438.88 1663.28 1126.35 948.08 111.98 1586.26 0 1819.54 1020.91 1250.57 1123.78 1471.02 783.64 1663.28 1438.88 1663.28"/>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="search-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Search</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="home-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Home</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="folder-open-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Projects</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="pie-chart-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Dashboard</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="people-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Team</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Support</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="settings-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Settings</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
         </div>
-      </nav>
-      <div class="navbar-expand-md">
-        <div class="navbar-dark text-center my-2">
-          <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
-          </button>
-        </div>
-        <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Comunidad</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ligas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nube</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Configuración
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Seguridad</a></li>
-                <li><a class="dropdown-item" href="#">Privacidad</a></li>
-                <li><a class="dropdown-item" href="#">Editar Perfil</a></li>
-                <li><a class="dropdown-item" href="#">Subscripción</a></li>
-                <li><a class="dropdown-item" href="#">Ayuda y Soporte</a></li>
-                <li><a class="dropdown-item" href="#">Otros ajustes</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-     </div>
 
     );
 
