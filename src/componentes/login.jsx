@@ -1,13 +1,15 @@
 import React, { useState } from "react";
  /*aquí va el import del menu*/
 import "../estilos/login.css";
+import Tienda from '../pages/tienda';
 
 
-
-function login() {
-  const [miLogin, setMiLogin] = useState("false");
+function Login() {
+  const [MiLogin, setMiLogin] = useState("false");
   const [usu, setUsu] = useState("");
   const [pas, setPas] = useState("");
+
+
   function IniciarSesion(e){
     e.preventDefault();
     var txtusu = document.getElementById("txtusu").value;
@@ -40,7 +42,8 @@ function login() {
 
 
   return (
-    <div className="login" id="form_login">
+    <div className="Login">
+      <div className="login" id="form_login">
       <section class="text-center">
         <div class="p-5 bg-image fondo" style={{ height: "300px" }}></div>
 
@@ -125,6 +128,9 @@ function login() {
         </div>
       </section>
     </div>
+    {MiLogin===true && <Tienda/>}
+    </div>
+    
   );
 }
-export default login;
+export default Login;
