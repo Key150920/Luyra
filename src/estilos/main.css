@@ -1,0 +1,49 @@
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+.fondo{
+    background-image: url('https://th.bing.com/th/id/OIP._AgulSq0Y3XNsc0xZxuxNwAAAA?pid=ImgDet&rs=1');
+
+}
+.registro{
+    background-image: url('https://img.freepik.com/fotos-premium/fundo-pastel-grafico-textura-moderna-colorida-design-digital-abstrato_97567-1695.jpg?w=740');
+}
+
+
+
+/* ESTILOS DE PERFIL*/
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+    }
+.editar{
+    background-image: url('https://img.freepik.com/fotos-premium/fundo-pastel-grafico-textura-moderna-colorida-design-digital-abstrato_97567-1695.jpg?w=740');
+}
+
+.gradient-custom {
+    background-image: url('https://img.freepik.com/fotos-premium/fundo-pastel-grafico-textura-moderna-colorida-design-digital-abstrato_97567-1695.jpg?w=740')
+}
