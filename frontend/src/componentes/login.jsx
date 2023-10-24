@@ -1,7 +1,7 @@
 import React, { useState } from "react";
  /*aquí va el import del menu*/
 import "../styles/login.css";
-import Tienda from '../pages/tienda';
+import Tienda from './tienda';
 
 
 function Login() {

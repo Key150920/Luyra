@@ -14,8 +14,30 @@ router.get('/', (req, res)=>{
 
 
 
-//codigo del login 
 
+
+router.post('/autenticacion', (req, res)=>{
+    const txtusu= req.body[0];
+    const txttel = req.body[1];
+    const txtpas = req.body[2];
+    console.log(req.body)
+    const sql = 'SELECT * FROM usuario WHERE correo = ? AND telefono = ? AND contraseña';
+
+    mysqlConnection.query(sql, [txtusu, txttel, txtpas], (err, results) => {
+        console.log(txtusu, txttel, txtpas)
+      if (err) throw err;
+  
+      if (results.length > 0) {
+        res.json({ mensaje: 'Usuario autenticado correctamente' });
+        console.log("result -->",results)
+        return results.nombre
+      } else {
+
+        res.status(401).json({ mensaje: 'Correo o contraseña incorrectos' });
+        return false
+      }
+    });
+})
 
 
 
@@ -24,7 +46,7 @@ router.post('/', (req, res)=>{
   
     let usuario = [ Correo, Contraseña, Nombre_U, Apellido, Departamento, Ciudad, Ocupacion];
   
-    let nuevoUsuario = `INSERT INTO usuarios( Correo, Contraseña, Nombre_U, Apellido, Departamento, Ciudad, Ocupacion) 
+    let nuevoUsuario = `INSERT INTO usuario( Correo, Contraseña, Nombre_U, Apellido, Departamento, Ciudad, Ocupacion) 
     VALUES( ?, SHA1(?),?,?,?,?,?)`;
     
     mysqlConnection.query(nuevoUsuario, usuario, (err, results, fields)=>{
