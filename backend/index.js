@@ -3,7 +3,6 @@ const app = require();
 const cors = require('cors');
 const routes = require('./routes/usuarios');
 
-
 app.use(cors({origin: '*'}));
 app.set('port',process.env.PORT || 4001);
 
