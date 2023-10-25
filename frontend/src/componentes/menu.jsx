@@ -33,7 +33,7 @@ function Menu() {
                   <a class="nav-link" href="#">Ligas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Comunidad</a>
+                <Link class="nav-link" to="/comunidad">Comunidad</Link>
                 </li>
                 <li class="nav-item">
                   <Link class="nav-link" to="/tienda">Tienda</Link>
@@ -50,7 +50,7 @@ function Menu() {
                     <li><a class="dropdown-item" href="#">Privacidad</a></li>
                     <li><a class="dropdown-item" href="#">Subscripción</a></li>
                     <li><a class="dropdown-item" href="#">Ayuda y Soporte</a></li>
-                    <li><a class="dropdown-item" href="#">Editar Perfil</a></li>
+                    <li><a class="dropdown-item" href="#"><Link class="nav-link" to="/perfil">Perfil</Link></a></li>
                     <li><a class="dropdown-item" href="#">Más</a></li>
 
 

@@ -6,6 +6,7 @@ import Registro from '../pages/Registro';
 import Perfil from '../pages/perfil';
 import Editar from '../pages/Editar';
 import Tienda from '../componentes/tienda';
+import Comunidad from '../componentes/comunidad';
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/perfil' element={<Perfil/>}/>
           <Route exact path='/editar' element={<Editar/>}/>
           <Route exact path='/tienda' element={<Tienda/>}/>
+          <Route exact path='/comunidad' element={<Comunidad/>}/>
        </Routes>
     </Router>
     
