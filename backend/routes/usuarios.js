@@ -6,7 +6,7 @@ router.post('/registro',(req,res)=>{
     console.log(req.body);
     const usu = req.body[0];
     const correo = req.body[1];
-    const contraseña = req.body[2];
+    const contraseña = req.body[2]; 
 
 
     let usuario = [usu, correo, contraseña];
