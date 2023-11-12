@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from '../componentes/menu';
-
+import '../styles/bg.css'
 import '../images/logo.png';
 import Unit1 from '../componentes/unit1';
 

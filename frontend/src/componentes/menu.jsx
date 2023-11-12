@@ -1,7 +1,6 @@
 import React from 'react';
 import Logo from '../images/newlogov2.png';
 import { Link } from "react-router-dom";
-import TiendaLink from '../componentes/tienda';
 import '../styles/styles.css';
 
 function Menu() {
