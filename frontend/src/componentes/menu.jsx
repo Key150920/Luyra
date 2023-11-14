@@ -32,7 +32,7 @@ function Menu() {
                   <a class="nav-link" href="#">Ligas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Comunidad</a>
+                  <Link class="nav-link" to="/comunidad">Comunidad</Link>
                 </li>
                 <li class="nav-item">
                   <Link class="nav-link" to="/tienda">Tienda</Link>
